@@ -1,7 +1,22 @@
 import numpy as np
 
 def open_pdb(file_location):
-    # This function reads in a pdb file and returns the atom names and coordinates.
+    """
+    This function reads in a pdb file and returns the atom names and coordinates.
+    
+    Parameters
+    ----------
+    file_location : str
+        The path to the pdb file.
+
+    Returns
+    -------
+    symbols : list
+        Symbols of all atoms in pdb.
+    coords : np.ndarray
+        Coordinates of each atom's positions.
+    """
+    
     with open(file_location) as f:
         data = f.readlines()
     coordinates = []
