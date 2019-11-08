@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-from .data import atom_colors
+from .atom_data import atom_colors
 
 def draw_molecule(coordinates, symbols, draw_bonds=None, save_location=None, dpi=300):
     
